@@ -1,6 +1,7 @@
 package com.example.nutri1;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
@@ -15,6 +16,8 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import org.jetbrains.annotations.NotNull;
 
 public class Nutiknow extends AppCompatActivity  {
 
@@ -53,6 +56,21 @@ public class Nutiknow extends AppCompatActivity  {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        switch(item.getItemId()){
+            case R.id.exit1: finish();
+                                System.exit(0);
+                                break;
+            default:
+
+        }
+
+        return true;
+    }
+
 
     @Override
     public boolean onSupportNavigateUp() {
