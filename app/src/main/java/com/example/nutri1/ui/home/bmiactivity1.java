@@ -30,11 +30,11 @@ RelativeLayout mbackground;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmiactivity1);
-
+        mrecalculatebmi=findViewById(R.id.recalculatebmi);
 
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setTitle(Html.fromHtml("<font color=\"white\"></font>"));
-        getSupportActionBar().setTitle("Result");
+        getSupportActionBar().setTitle("B.M.I");
         ColorDrawable colorDrawable=new ColorDrawable(Color.parseColor("#1E1D1D"));
         getSupportActionBar().setBackgroundDrawable(colorDrawable);
         intent=getIntent();
@@ -42,7 +42,7 @@ RelativeLayout mbackground;
         mbmicategory=findViewById(R.id.bmicategory);
         mgender=findViewById(R.id.genderdisplay);
         mbackground=findViewById(R.id.contentlayout);
-        mimageview=findViewById(R.id.imageView);
+        mimageview=findViewById(R.id.imageview);
 
 
         height=intent.getStringExtra("height");
@@ -56,7 +56,7 @@ RelativeLayout mbackground;
         mbmi=Float.toString(intbmi);
         if(intbmi<18){
             mbmicategory.setText("You are Underweight\nFruit Recommendation:Avacardos and Mangoes");
-            mbackground.setBackgroundColor(Color.YELLOW);
+            mbackground.setBackgroundColor(Color.LTGRAY);
             mimageview.setImageResource(R.drawable.notok);
         }
         else if(intbmi>18 && intbmi<25){
@@ -81,10 +81,10 @@ RelativeLayout mbackground;
         }
 
         mgender.setText(intent.getStringExtra("gender"));
-        mbmidisplay.setText(mbmi);
+        mbmidisplay.setText(Integer.parseInt(mbmi));
 
 
-        mrecalculatebmi=findViewById(R.id.recalculatebmi);
+
         mrecalculatebmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

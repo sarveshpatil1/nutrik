@@ -48,13 +48,9 @@ public class HomeFragment extends Fragment {
         });
 
 
-
-
-
-
     mcalculatebmi=root.findViewById(R.id.calculatebmi);
 
-    mcurrentage=root.findViewById(R.id.Age);
+    mcurrentage=root.findViewById(R.id.currentage);
     mcurrentheight=root.findViewById(R.id.currentheight);
     mcurrentweight=root.findViewById(R.id.currentweight);
     mincrementage=root.findViewById(R.id.incrementage);
@@ -68,8 +64,8 @@ public class HomeFragment extends Fragment {
     mmale.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            mmale.setBackground(ContextCompat.getDrawable(getContext(),R.drawable.malefemale));
-            mfemale.setBackground(ContextCompat.getDrawable(getContext(),R.drawable.malefemalenotfocus));
+            mmale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemale));
+            mfemale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemalenotfocus));
             typeofuser="Male";
         }
     });
@@ -77,8 +73,8 @@ public class HomeFragment extends Fragment {
         mfemale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mfemale.setBackground(ContextCompat.getDrawable(getContext(),R.drawable.malefemale));
-                mmale.setBackground(ContextCompat.getDrawable(getContext(),R.drawable.malefemalenotfocus));
+                mfemale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemale));
+                mmale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemalenotfocus));
                 typeofuser="Female";
             }
         });
@@ -146,18 +142,18 @@ public class HomeFragment extends Fragment {
         public void onClick(View v) {
 
             if (typeofuser.equals("0")){
-                Toast.makeText(getContext().getApplicationContext(), "Select Your Gender",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity().getApplicationContext(), "Select Your Gender",Toast.LENGTH_SHORT);
             }
             else if(mintprogress.equals("0")){
-                Toast.makeText(getContext().getApplicationContext(), "Select Your height",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity().getApplicationContext(), "Select Your height",Toast.LENGTH_SHORT);
 
             }
             else if(intage==0||intage<0){
-                Toast.makeText(getContext().getApplicationContext(), "age is incorrect",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity().getApplicationContext(), "age is incorrect",Toast.LENGTH_SHORT);
 
             }
             else if(intweight==0||intweight<0){
-                Toast.makeText(getContext().getApplicationContext(), "Weight is incorrect",Toast.LENGTH_SHORT);
+                Toast.makeText(getActivity().getApplicationContext(), "Weight is incorrect",Toast.LENGTH_SHORT);
 
             }
             else{
