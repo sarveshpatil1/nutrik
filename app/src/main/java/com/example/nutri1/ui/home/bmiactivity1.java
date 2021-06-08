@@ -81,7 +81,7 @@ RelativeLayout mbackground;
         }
 
         mgender.setText(intent.getStringExtra("gender"));
-        mbmidisplay.setText(Integer.parseInt(mbmi));
+        mbmidisplay.setText(mbmi);
 
 
 
