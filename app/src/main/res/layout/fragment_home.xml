@@ -143,7 +143,8 @@ android:background="@drawable/homebmibackground">
     android:layout_marginRight="10dp"
     android:layout_marginBottom="20dp"
     android:layout_alignParentBottom="true"
-    android:progressTint="#FF4c4c" />
+    android:progressTint="#FF4c4c"
+    android:thumbTint="@color/white"/>
 
 </RelativeLayout>
 
