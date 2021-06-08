@@ -38,6 +38,7 @@ public class Nutiknow extends AppCompatActivity  {
             }
         }
         );
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -65,10 +66,7 @@ public class Nutiknow extends AppCompatActivity  {
             case R.id.exit1: finish();
                                 System.exit(0);
                                 break;
-            default:
-
-        }
-
+            default:        }
         return true;
     }
 

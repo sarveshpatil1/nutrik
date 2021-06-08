@@ -1,5 +1,6 @@
 package com.example.nutri1.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,7 @@ import com.example.nutri1.R;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
-
+    android.widget.Button mcalculatebmi;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -33,6 +34,14 @@ public class HomeFragment extends Fragment {
 
 
 
+    mcalculatebmi=root.findViewById(R.id.calculatebmi);
+    mcalculatebmi.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent=new Intent(getActivity(), bmiactivity1.class);
+                    startActivity(intent);
+        }
+    });
 
         return root;
     }
