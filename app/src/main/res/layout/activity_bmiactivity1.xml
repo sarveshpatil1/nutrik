@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imageview"
-        android:layout_width="100dp"
-        android:layout_height="110dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:padding="10dp"
         android:src="@drawable/ok"
@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
+            android:textSize="35sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:text="55"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="gender"
             android:layout_marginTop="15dp"
-            android:textSize="17sp"
+            android:textSize="25sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/bmidisplay"
             android:id="@+id/genderdisplay"
@@ -53,10 +53,10 @@
             android:layout_height="wrap_content"
             android:text="your bmi is"
             android:textColor="@color/white"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/genderdisplay"
-            android:textSize="15sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             android:id="@+id/bmicategory"/>
 

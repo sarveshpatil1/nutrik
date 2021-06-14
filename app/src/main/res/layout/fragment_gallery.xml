@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment">
 
-    <Button
+    <android.widget.Button
         android:id="@+id/predictbutton"
+        android:background="@drawable/grad_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/scrl"
+        android:layout_below="@id/fruittext2"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
+        android:textColor="@color/white"
         android:text="Predict"
         android:layout_toRightOf="@id/selectbutton"/>
 
@@ -20,36 +22,33 @@
         android:id="@+id/fruittext"
         android:layout_width="300dp"
         android:layout_height="50dp"
+        android:layout_below="@+id/fruitimage"
         android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
         android:width="300dp"
         android:height="50dp"
+        android:fontFamily="@font/mate_sc"
         android:text="Fruit."
         android:textAlignment="center"
         android:textSize="30sp"
-        android:layout_marginTop="20sp"
-        android:layout_below="@+id/fruitimage"/>
-    <ScrollView
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_below="@id/fruittext"
-        android:layout_centerInParent="true"
-        android:id="@+id/scrl"
+        android:textStyle="bold"/>
 
-        >
+
     <TextView
         android:id="@+id/fruittext2"
         android:layout_width="300dp"
         android:layout_height="200dp"
+        android:layout_below="@+id/fruittext"
         android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
         android:width="300dp"
         android:height="200dp"
+        android:fontFamily="@font/lato_italic"
+        android:textColor="@color/black"
+        android:scrollbars="vertical"
         android:text="   Details Here.."
-        android:textStyle="italic"
-
-        android:textSize="25sp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/fruittext"/>
-    </ScrollView>
+        android:textSize="20sp"
+         />
 
     <ImageView
         android:id="@+id/fruitimage"
@@ -60,12 +59,15 @@
 
         android:src="@drawable/fruiticion" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/selectbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="select"
-        android:layout_below="@id/scrl"
+        android:layout_below="@id/fruittext2"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+
+        android:background="@drawable/grad_button"/>
 </RelativeLayout>
