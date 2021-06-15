@@ -4,87 +4,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    tools:context=".ui.slideshow.SlideshowFragment"
+    android:scrollbars="vertical"
+    android:id="@+id/li">
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="311dp"
-        android:layout_height="106dp"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103" />
 
-    <Button
-        android:id="@+id/banana"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="@string/banana"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.277" />
 
-    <Button
-        android:id="@+id/apple"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="Apple"
-        app:layout_constraintBottom_toTopOf="@+id/cantaloupe"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/banana"
-        app:layout_constraintVertical_bias="0.477" />
 
-    <Button
-        android:id="@+id/tomato"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="Tomato"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.917" />
+        <TextView
+            android:id="@+id/text_slideshow"
+            android:layout_width="311dp"
+            android:layout_height="106dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.103"
 
-    <Button
-        android:id="@+id/mango"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="Mango"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789" />
+            android:fontFamily="@font/mate_sc"/>
 
-    <Button
-        android:id="@+id/orange"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="orange"
-        app:layout_constraintBottom_toTopOf="@+id/mango"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cantaloupe"
-        app:layout_constraintVertical_bias="0.695" />
 
-    <Button
-        android:id="@+id/cantaloupe"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="Cantaloupe"
-        app:layout_constraintBottom_toTopOf="@+id/orange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apple"
-        app:layout_constraintVertical_bias="0.586" />
+        <android.widget.Button
+            android:id="@+id/banana"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/grad_b"
+            android:text="@string/banana"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="0.277"
+            android:fontFamily="@font/lato_italic"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <android.widget.Button
+            android:id="@+id/apple"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Apple"
+            app:layout_constraintBottom_toTopOf="@+id/strawberry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orange"
+            app:layout_constraintVertical_bias="0.477"
+            android:background="@drawable/grad_a"
+            android:fontFamily="@font/lato_italic"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <android.widget.Button
+            android:id="@+id/tomato"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Tomato"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.917"
+            android:background="@drawable/grad_t"
+            android:fontFamily="@font/lato_italic"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <android.widget.Button
+            android:id="@+id/strawberry"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Strawberry"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.789"
+            android:background="@drawable/grad_s"
+            android:fontFamily="@font/lato_italic"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <android.widget.Button
+            android:id="@+id/orange"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="orange"
+            app:layout_constraintBottom_toTopOf="@+id/apple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cantaloupe"
+            app:layout_constraintVertical_bias="0.695"
+            android:background="@drawable/grad_o"
+            android:fontFamily="@font/lato_italic"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <android.widget.Button
+            android:id="@+id/cantaloupe"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Cantaloupe"
+            app:layout_constraintBottom_toTopOf="@+id/orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banana"
+            app:layout_constraintVertical_bias="0.586"
+            android:background="@drawable/grad_c"
+            android:fontFamily="@font/lato_italic"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

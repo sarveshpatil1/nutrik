@@ -12,8 +12,9 @@ public class SlideshowViewModel extends ViewModel {
 
     public SlideshowViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Here are the list of fruits this app can scan\n\n" +
-                "click on any button to know more about the fruit");
+        mText.setValue("Here are the list of fruits this app can scan\n" +
+                "click on any button to know more about the fruit from the internet");
+
     }
 
 

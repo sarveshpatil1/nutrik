@@ -3,6 +3,7 @@ package com.example.nutri1.ui.slideshow;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -20,7 +22,9 @@ import com.example.nutri1.R;
 public class SlideshowFragment extends Fragment implements View.OnClickListener {
 
     private SlideshowViewModel slideshowViewModel;
-    Button b,a,o,t,m,c;
+    android.widget.Button b,a,o,t,st,c;
+    TextView mtext_s;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
@@ -40,14 +44,16 @@ public class SlideshowFragment extends Fragment implements View.OnClickListener 
         c= root.findViewById(R.id.cantaloupe);
         a= root.findViewById(R.id.apple);
         t= root.findViewById(R.id.tomato);
-        m= root.findViewById(R.id.mango);
+        st= root.findViewById(R.id.strawberry);
+        mtext_s=root.findViewById(R.id.text_slideshow);
+        mtext_s.setMovementMethod(new ScrollingMovementMethod());
 
     b.setOnClickListener(this);
     o.setOnClickListener(this);
     c.setOnClickListener(this);
     t.setOnClickListener(this);
     a.setOnClickListener(this);
-    m.setOnClickListener(this);
+    st.setOnClickListener(this);
     return root;
     }
 
@@ -64,7 +70,7 @@ public class SlideshowFragment extends Fragment implements View.OnClickListener 
                 break;
             case R.id.tomato: gotourl("https://en.wikipedia.org/wiki/Tomato");
                 break;
-            case R.id.mango: gotourl("https://en.wikipedia.org/wiki/Mango");
+            case R.id.strawberry: gotourl("https://www.medicalnewstoday.com/articles/271285");
                 break;
         }
 

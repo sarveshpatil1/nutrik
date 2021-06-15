@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -25,7 +27,7 @@ String height;
 String weight;
 Float intheight,intweight;
 RelativeLayout mbackground;
-
+Integer ibmi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +42,7 @@ RelativeLayout mbackground;
         intent=getIntent();
         mbmidisplay=findViewById(R.id.bmidisplay);
         mbmicategory=findViewById(R.id.bmicategory);
+        mbmicategory.setMovementMethod(new ScrollingMovementMethod());
         mgender=findViewById(R.id.genderdisplay);
         mbackground=findViewById(R.id.contentlayout);
         mimageview=findViewById(R.id.imageview);
@@ -51,35 +54,44 @@ RelativeLayout mbackground;
         intweight=Float.parseFloat(weight);
         intheight=intheight/100;
         intbmi=intweight/(intheight*intheight);
+        ibmi=Math.round(intbmi);
 
+        mbmi=Integer.toString(ibmi);
 
-        mbmi=Float.toString(intbmi);
         if(intbmi<18){
-            mbmicategory.setText("You are Underweight\nFruit Recommendation:Avacardos and Mangoes");
+            mbmicategory.setText("You are Underweight\n\nFruit Recommendation: Avacardos and Mangoes\n\t" +
+                    "• These help to maintain good body weight");
             mbackground.setBackgroundColor(Color.LTGRAY);
             mimageview.setImageResource(R.drawable.notok);
         }
         else if(intbmi>18 && intbmi<25){
-            mbmicategory.setText("Your BMI is perfect\n Eat healthy fruits like bananas for gut health");
-            mbackground.setBackgroundColor(Color.GREEN);
+            mbmicategory.setText("Your BMI is perfect\n\nEat healthy fruits like\n\t" +
+                    "• bananas for gut health");
+            mbackground.setBackgroundResource(R.drawable.grad_button2);
             mimageview.setImageResource(R.drawable.ok);
         }
         else if(intbmi>25 && intbmi<30){
-            mbmicategory.setText("You are overweight\nFruit Recommendation:Apples and kiwis\nThese fruits are great for weight loss");
-            mbackground.setBackgroundColor(Color.YELLOW);
+            mbmicategory.setText("You are overweight\n\nFruit Recommendation: Apples and kiwis\n\t" +
+                    "• These fruits are great for weight loss");
+            mbackground.setBackgroundResource(R.drawable.grad_o);
             mimageview.setImageResource(R.drawable.notok);
         }
-        else if(intbmi>30){
-            mbmicategory.setText("You are obese\nFruit Recommendation:Berries,Grapefruit and Apples\nAlso consult a Dietitian for proper guidance");
-            mbackground.setBackgroundColor(Color.RED);
+        else if(intbmi>30 && intbmi<41){
+            mbmicategory.setText("You are obese\n\nFruit Recommendation: Berries,Grapefruit and Apples\n\t" +
+                    "• Also consult a Dietitian for proper guidance");
+            mbackground.setBackgroundResource(R.drawable.grad_a);
+            mimageview.setImageResource(R.drawable.notok);
+        }
+        else if(intbmi>41 && intbmi<60){
+            mbmicategory.setText("Extreme obese consult a doctor soon");
+            mbackground.setBackgroundResource(R.drawable.grad_t);
             mimageview.setImageResource(R.drawable.notok);
         }
         else {
-            mbmicategory.setText("Extreme obese consult a doctor soon");
-            mbackground.setBackgroundColor(Color.RED);
+            mbmicategory.setText("Please input your Correct Weight and Height");
+            mbackground.setBackgroundResource(R.drawable.grad_t);
             mimageview.setImageResource(R.drawable.notok);
         }
-
         mgender.setText(intent.getStringExtra("gender"));
         mbmidisplay.setText(mbmi);
 

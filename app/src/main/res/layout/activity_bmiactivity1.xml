@@ -29,50 +29,58 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="35sp"
+            android:textSize="45sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:text="55"
             android:layout_centerHorizontal="true"
             android:id="@+id/bmidisplay"
+            android:fontFamily="@font/mate_sc"
+
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="gender"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="15sp"
             android:textSize="25sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/bmidisplay"
             android:id="@+id/genderdisplay"
             android:textStyle="bold"
             android:textColor="@color/white"
+            android:fontFamily="@font/krona_one"
             />
+
         <TextView
+            android:id="@+id/bmicategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/genderdisplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/mate"
             android:text="your bmi is"
             android:textColor="@color/white"
-            android:layout_marginTop="30dp"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/genderdisplay"
-            android:textSize="30sp"
+            android:textSize="35sp"
             android:textStyle="bold"
-            android:id="@+id/bmicategory"/>
+            android:scrollbars="vertical"
+            />
 
     </RelativeLayout>
     <android.widget.Button
-        android:layout_width="match_parent"
+        android:layout_width="120sp"
         android:layout_height="50dp"
         android:id="@+id/recalculatebmi"
         android:layout_below="@id/contentlayout"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="50sp"
+        android:layout_centerInParent="true"
         android:textSize="15sp"
-        android:layout_marginBottom="15dp"
-        android:text="recalculate your BMI"
+        android:layout_marginBottom="15sp"
+        android:text="Go back"
         android:textColor="@color/white"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
         android:textStyle="bold"
         android:background="@drawable/homebmibuttonbg"/>
 </RelativeLayout>

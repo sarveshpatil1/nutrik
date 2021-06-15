@@ -1,9 +1,9 @@
 0 Apple
-1 Tomato
-2 Not ripened Tomato 
-3 Strawberry
+1 Rotten Apple
+2 Banana
+3 Rotten Banana
 4 Orange
-5 Banana
-6 Rotten Banana
-7 Rotten Mango
-8 Mango
+5 Rotten Orange
+6 Tomato
+7 Non Ripened tomato
+8 Strawberry

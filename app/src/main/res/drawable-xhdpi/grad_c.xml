@@ -5,12 +5,11 @@
         xmlns:android = "http://schemas.android.com/apk/res/android" >
 
         <gradient
-            android:startColor = "#00F260"
-            android:centerColor="@color/green_500"
-            android:endColor = "#0575E6"
+            
+            android:startColor = "#f09819"
+            android:endColor = "#edde5d"
             android:angle = "45"
-            android:centerX="0.25"
-            android:centerY="0"
             android:type="linear" />
-    <corners android:radius="5dp"></corners>
+    <corners android:radius="5dp"
+        > </corners>
     </shape>
