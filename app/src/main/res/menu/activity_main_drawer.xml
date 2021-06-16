@@ -4,10 +4,12 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+          <item android:title="Functions">
+<menu>
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
-            android:title="@string/menu_home" />
+            android:title="B.M.I" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_camera"
@@ -16,15 +18,45 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_list"
             android:title="List of fruits" />
+</menu>
+          </item>
     </group>
 
-    <item android:title="more actions">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_share"
-                android:title="share" />
+<item android:title="" android:visible="true" android:enabled="false"></item>
 
-        </menu>
-    </item>
+
+
+<group android:enabled="false">
+   <item android:title="How to use BMI function." />
+
+            <item android:title="1.Go BMI" />
+
+            <item android:title="2.Input your details"/>
+
+            <item android:title="3.Get recommendation based on bmi" />
+
+
+
+
+</group>
+
+    <item android:visible="true"
+        android:title="" android:enabled="false"
+        ></item>
+    <group android:enabled="false">
+        <item android:title="How to use scan function."/>
+
+                <item android:title="1. Go to scan option"
+
+                    />
+
+                <item android:title="2. Click on camera "/>
+
+                <item android:title="3. Take a photo of the fruit" />
+                <item android:title="4. Click predict to know the details"/>
+
+
+
+    </group>
+
 </menu>

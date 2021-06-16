@@ -14,7 +14,7 @@
     <item android:title="share/exit">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nshare"
                 android:icon="@drawable/ic_share"
                 android:title="share" />
             <item

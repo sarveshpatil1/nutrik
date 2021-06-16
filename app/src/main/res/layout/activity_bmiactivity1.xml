@@ -15,9 +15,9 @@
         android:padding="10dp"
         android:src="@drawable/ok"
         android:layout_above="@id/contentlayout"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="30dp"/>
 
-    </ImageView>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:text="gender"
             android:layout_marginTop="15sp"
-            android:textSize="25sp"
+            android:textSize="18sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/bmidisplay"
             android:id="@+id/genderdisplay"
@@ -60,9 +60,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30sp"
             android:fontFamily="@font/mate"
-            android:text="your bmi is"
+            android:text="texthere"
             android:textColor="@color/white"
-            android:textSize="35sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:scrollbars="vertical"
             />
@@ -82,5 +82,6 @@
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20sp"
         android:textStyle="bold"
-        android:background="@drawable/homebmibuttonbg"/>
+        android:background="@drawable/homebmibuttonbg"
+        android:hapticFeedbackEnabled="true"/>
 </RelativeLayout>

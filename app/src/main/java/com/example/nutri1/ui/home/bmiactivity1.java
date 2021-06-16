@@ -59,26 +59,23 @@ Integer ibmi;
         mbmi=Integer.toString(ibmi);
 
         if(intbmi<18){
-            mbmicategory.setText("You are Underweight\n\nFruit Recommendation: Avacardos and Mangoes\n\t" +
-                    "• These help to maintain good body weight");
+            mbmicategory.setText(R.string.u_bmi);
             mbackground.setBackgroundColor(Color.LTGRAY);
             mimageview.setImageResource(R.drawable.notok);
         }
         else if(intbmi>18 && intbmi<25){
-            mbmicategory.setText("Your BMI is perfect\n\nEat healthy fruits like\n\t" +
-                    "• bananas for gut health");
+
+            mbmicategory.setText(R.string.p_bmi);
             mbackground.setBackgroundResource(R.drawable.grad_button2);
             mimageview.setImageResource(R.drawable.ok);
         }
         else if(intbmi>25 && intbmi<30){
-            mbmicategory.setText("You are overweight\n\nFruit Recommendation: Apples and kiwis\n\t" +
-                    "• These fruits are great for weight loss");
+            mbmicategory.setText(R.string.ov_bmi);
             mbackground.setBackgroundResource(R.drawable.grad_o);
             mimageview.setImageResource(R.drawable.notok);
         }
         else if(intbmi>30 && intbmi<41){
-            mbmicategory.setText("You are obese\n\nFruit Recommendation: Berries,Grapefruit and Apples\n\t" +
-                    "• Also consult a Dietitian for proper guidance");
+            mbmicategory.setText(R.string.o_bmi);
             mbackground.setBackgroundResource(R.drawable.grad_a);
             mimageview.setImageResource(R.drawable.notok);
         }
@@ -93,7 +90,7 @@ Integer ibmi;
             mimageview.setImageResource(R.drawable.notok);
         }
         mgender.setText(intent.getStringExtra("gender"));
-        mbmidisplay.setText(mbmi);
+        mbmidisplay.setText("B.M.I - "+mbmi);
 
 
 

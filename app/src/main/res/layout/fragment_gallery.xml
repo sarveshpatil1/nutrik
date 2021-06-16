@@ -9,14 +9,14 @@
     <android.widget.Button
         android:id="@+id/predictbutton"
         android:background="@drawable/grad_button4"
-        android:layout_width="wrap_content"
+        android:layout_width="120sp"
         android:layout_height="wrap_content"
         android:layout_below="@id/fruittext2"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginRight="60sp"
+        android:layout_marginTop="30dp"
         android:textColor="@color/white"
-        android:text="Predict"
-        android:layout_toRightOf="@id/selectbutton"/>
+        android:text="Show details"
+        android:layout_alignParentEnd="true"/>
 
     <TextView
         android:id="@+id/fruittext"
@@ -53,22 +53,22 @@
 
     <ImageView
         android:id="@+id/fruitimage"
-        android:layout_width="175dp"
-        android:layout_height="175dp"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
 
-        android:src="@drawable/fruiticion" />
+        android:src="@mipmap/ic_launcher" />
 
     <android.widget.Button
         android:id="@+id/selectbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="120sp"
         android:layout_height="wrap_content"
         android:text="select"
         android:layout_below="@id/fruittext2"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="30dp"
         android:textColor="@color/white"
-
+android:layout_alignParentLeft="true"
         android:background="@drawable/grad_button3"/>
 </RelativeLayout>

@@ -1,7 +1,9 @@
 package com.example.nutri1.ui.home;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
@@ -34,6 +37,7 @@ public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -67,6 +71,9 @@ public class HomeFragment extends Fragment {
             mmale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemale));
             mfemale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemalenotfocus));
             typeofuser="Male";
+
+
+
         }
     });
 
@@ -76,11 +83,14 @@ public class HomeFragment extends Fragment {
                 mfemale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemale));
                 mmale.setBackground(ContextCompat.getDrawable(getActivity().getApplicationContext(),R.drawable.malefemalenotfocus));
                 typeofuser="Female";
+
             }
         });
 
         mseekbarforheight.setMax(200);
+        mseekbarforheight.setMin(80);
         mseekbarforheight.setProgress(165);
+
         mseekbarforheight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -106,6 +116,7 @@ public class HomeFragment extends Fragment {
                 intage=intage+1;
                 age2=String.valueOf(intage);
                 mcurrentage.setText(age2);
+
             }
         });
 
@@ -115,6 +126,7 @@ public class HomeFragment extends Fragment {
                 intage=intage-1;
                 age2=String.valueOf(intage);
                 mcurrentage.setText(age2);
+
             }
         });
 
@@ -124,6 +136,7 @@ public class HomeFragment extends Fragment {
                 intweight=intweight+1;
                 weight2=String.valueOf(intweight);
                 mcurrentweight.setText(weight2);
+
             }
         });
 
@@ -133,6 +146,7 @@ public class HomeFragment extends Fragment {
                 intweight=intweight-1;
                 weight2=String.valueOf(intweight);
                 mcurrentweight.setText(weight2);
+
             }
         });
 

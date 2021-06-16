@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:background="@drawable/spbg">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginTop="100sp"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:fadingEdge="vertical"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_alignParentBottom="true"
+        android:progress="10"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp" />
+
+    <TextView
+        android:id="@+id/tip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutriknow"
+        android:textSize="35sp"
+        android:fontFamily="@font/mate_sc"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40sp"
+        android:layout_below="@id/logo"/>
+
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text="@string/s_tip1"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:fontFamily="@font/lato_italic"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40sp"
+        android:layout_below="@id/tip1"/>
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text="@string/s_tip2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/mate"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40sp"
+        android:layout_below="@id/tip2"/>
+</RelativeLayout>

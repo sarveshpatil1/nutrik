@@ -7,12 +7,119 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
+    <string name="menu_bmi"><b><h2>B.M.I</h2></b></string>
     <string name="menu_gallery">CAMERA</string>
     <string name="menu_slideshow">LIST</string>
     <string name="banana">Banana</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+
+    "BMI Activity Data"
+    <string name="u_bmi">You are <b>Underweight</b>\n\nFruit Recommendation: <i>Avacardos and Mangoes</i>\n\t• These help to maintain body weight</string>
+    <string name="p_bmi">Your BMI is perfect\n\nEat <i>healthy</i> fruits like\n\t• Bananas for gut health</string>
+    <string name="ov_bmi">You are <b>overweight</b>\n\nFruit Recommendation: <i>Apples</i> and <i>Kiwis</i>\n\t• These fruits help lose weight"</string>
+    <string name="o_bmi">"You are <b>obese</b>\n\nFruit Recommendation: <i>Berries,Grapefruit</i> and <i>Apples</i>\n\t• Also consult a Dietitian for guidance"</string>
+
+
+    "Fruits Data"
+    <string name="s_apple">\t\tFresh:\t\t\t<i><u><b>YES</b></u></i>\n\n\t\tBenefits:\n\t\t\t
+                                 a) Good for Heart\n\t\t\t
+                                 b) Lowers Risk of Diabetes\n\t\t\t
+                                 "c) Promote Good Gut Bacteria\n\n\t\t"
+                                 "Nutrients:\n\t\t\t"
+                                 "• Calories: 130.\n\t\t\t"
+                                 "• Water: 86%\n\t\t\t"
+                                 "• Protein: 1 grams.\n\t\t\t"
+                                 "• Carbs: 34 grams.\n\t\t\t"
+                                 "• Sugar: 25 grams.\n\t\t\t"
+                                 "• Fiber: 5 grams.\n\t\t\t"
+                                 "• Fat: 0.2 grams"</string>
+
+    <string name="r_apple">\tFresh:\t\t<i><u><b>NO</b></u></i>\n\n\t
+                                         "Recommendation:\n\t\t"
+                                         "• Better not to eat\n\n\t"
+                                 "Benefits of Apples:\n\t\t"
+                                 "a) Lowers Risk of Diabetes\n\t\t"
+                                 "b) Promote Good Gut Bacteria"</string>
+
+    <string name="s_orange">\t\tFresh:\t\t\t<u>YES</u>\n\n\t\t
+                                 "Benefits:\n\t\t\t"
+                                 "a) Boosts your immune system\n\t\t\t"
+                                 "b) Good for Weight control\n\t\t\t"
+                                 "c) Helps to maintain skin health\n\n\t\t"
+                                 "Nutrients:\n\t\t\t"
+                                 "• Calories: 80.\n\t\t\t"
+                                 "• Water: 87%\n\t\t\t"
+                                 "• Vit A: 14 milligrams.\n\t\t\t"
+                                 "• Vit B: 11.8 grams.\n\t\t\t"
+                                 "• Sugar: 14 grams.\n\t\t\t"
+                                 "• Fiber: 3 grams.\n\t\t\t"
+                                 "• Fat: 0.1"</string>
+    <string name="r_orange">\tFresh:\t\t<i><u><b>NO</b></u></i>\n\n\t
+                                 "Recommendation:\n\t\t"
+                                 "• Better not to eat\n\n\t"
+                                 "• Can be used for composting\n\n\t"
+                                 "Benefits of Orange:\n\t\t"
+                                 "a) Boosts your immune system\n\t\t"
+                                 "b) Good for Weight control\n\t\t"
+                                 "c) Helps to maintain skin health"</string>
+    <string name="s_banana">\t\tFresh:\t\t\t<i><u><b>YES</b></u></i>\n\n\t\t
+                                 "Benefits:\n\t\t\t"
+                                 "a) Good for Digestive health\n\t\t\t"
+                                 "b) Lowers Risk of Diabetes\n\t\t\t"
+                                 "c) Promote Good Gut Bacteria\n\t\t\t"
+                                 "c) Helps manage Blood pressure\n\n\t\t\t"
+                                 "Nutrients:\n\t\t\t"
+                                 "• Calories: 110.\n\t\t\t"
+                                 "• Water: 86%\n\t\t\t"
+                                 "• Carbs: 30 grams.\n\t\t\t"
+                                 "• Sugar: 19 grams.\n\t\t\t"
+                                 "• Fiber: 3 grams.\n\t\t\t"
+                                 "• Fat: 0.1 grams"</string>
+    <string name="r_banana">\tFresh:\t\t<i><u><b>NO</b></u></i>\n\n\t
+                                 "Recommendation:\n\t\t"
+                                 "• Better not to eat\n\n\t"
+                                "a) Good for Digestive health\n\t\t"
+                                 "b) Lowers Risk of Diabetes\n\t\t"
+                                 "c) Promote Good Gut Bacteria\n\t\t"
+                                 "c) Helps manage Blood pressure\n\t\t"</string>
+    <string name="n_tomato">\tFresh:\t\t<i><u><b>NO</b></u></i>\n\n\t
+                                 "Recommendation:\n\t\t"
+                                 "• Better not to eat\n\n\t"
+                                 "Benefits of RipeTomato:\n\t\t"
+                                 "a) Good for Eyes and skin\n\t\t"
+                                 "b) Controls blood sugar level\n\t\t"
+                                 "c) Helps in body hydration"</string>
+    <string name="s_tomato">\t\tFresh:\t\t\t<i><u><b>YES</b></u></i>\n\n\t\t
+                                 "Benefits:\n\t\t\t"
+                                 "a) Good for Eyes and skin\n\t\t\t"
+                                 "b) Controls blood sugar level\n\t\t\t"
+                                 "c) Helps in body hydration\n\n\t\t"
+                                 "Nutrients:\n\t\t\t"
+                                 "• Calories: 52.\n\t\t\t"
+                                 "• Water: 86%\n\t\t\t"
+                                 "• Protein: 0.3 grams.\n\t\t\t"
+                                 "• Carbs: 13.8 grams.\n\t\t\t"
+                                 "• Sugar: 10.4 grams.\n\t\t\t"
+                                 "• Fiber: 2.4 grams.\n\t\t\t"
+                                 "• Fat: 0.2 grams"</string>
+
+    <string name="s_straw">"\t\tFresh:\t\t\t<i><u><b>YES</b></u></i>\n\n\t\t"
+                                 "Benefits:\n\t\t\t"
+                                 "a) Good for  Blood pressure\n\t\t\t"
+                                 "b) Lowers Risk of Diabetes\n\t\t\t"
+                                 "c) Promote Good Gut Bacteria\n\t\t\t"
+                                 "d) Helps to Prevent strokes\n\n\t\t"
+                                 "Nutrients:\n\t\t\t"
+                                 "• Calories: 100.\n\t\t\t"
+                                 "• Water: 91%\n\t\t\t"
+                                 "• Protein: 0.7 grams.\n\t\t\t"
+                                 "• Carbs: 7.7 grams.\n\t\t\t"
+                                 "• Sugar: 8 grams.\n\t\t\t"
+                                 "• Fiber: 2 grams.\n\t\t\t"
+                                 "• Fat: 0.3 grams"</string>
+    "splash"
+    <string name="s_tip1"><b>Get to know the nutrition present in the fruits</b></string>
+    <string name="s_tip2">Use <i>B.M.I</i> feature to get personalized tips.</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -102,4 +209,18 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
 </resources>
