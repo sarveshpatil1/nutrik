@@ -8,7 +8,7 @@
             
             android:startColor = "#f09819"
             android:endColor = "#edde5d"
-            android:angle = "225"
+            android:angle = "235"
             android:type="linear" />
     <corners android:radius="5dp"
         > </corners>

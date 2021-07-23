@@ -156,31 +156,19 @@ public class HomeFragment extends Fragment {
         public void onClick(View v) {
 
             if (typeofuser.equals("0")){
-                Toast.makeText(getActivity().getApplicationContext(), "Select Your Gender",Toast.LENGTH_SHORT).show();
-            }
+                Toast.makeText(getActivity().getApplicationContext(), "Select Your Gender",Toast.LENGTH_SHORT).show(); }
             else if(mintprogress.equals("0")){
-                Toast.makeText(getActivity().getApplicationContext(), "Select Your height",Toast.LENGTH_SHORT).show();
-
-            }
+                Toast.makeText(getActivity().getApplicationContext(), "Select Your height",Toast.LENGTH_SHORT).show(); }
             else if(intage==0||intage<0){
-                Toast.makeText(getActivity().getApplicationContext(), "age is incorrect",Toast.LENGTH_SHORT).show();
-
-            }
+                Toast.makeText(getActivity().getApplicationContext(), "age is incorrect",Toast.LENGTH_SHORT).show(); }
             else if(intweight==0||intweight<0){
-                Toast.makeText(getActivity().getApplicationContext(), "Weight is incorrect",Toast.LENGTH_SHORT).show();
-
-            }
+                Toast.makeText(getActivity().getApplicationContext(), "Weight is incorrect",Toast.LENGTH_SHORT).show(); }
             else{
-
-
-
             Intent intent=new Intent(getActivity(), bmiactivity1.class);
             intent.putExtra("gender",typeofuser);
             intent.putExtra("height",mintprogress);
             intent.putExtra("weight",weight2);
             intent.putExtra("age",age2);
-
-
                     startActivity(intent);}
 
         }

@@ -26,6 +26,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import android.text.Spanned;
+import android.widget.Toast;
+
 import com.example.nutri1.R;
 import com.example.nutri1.ml.Model;
 
@@ -44,7 +46,7 @@ public class GalleryFragment extends Fragment {
     TextView mfruittext,mft2;
     Bitmap img;
     DecimalFormat df=new DecimalFormat("#.###");
-
+    float acc= (float) 190.0;
     private GalleryViewModel galleryViewModel;
     @RequiresApi(api = Build.VERSION_CODES.O)
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -102,7 +104,7 @@ public class GalleryFragment extends Fragment {
 
                      // Releases model resources if no longer used.
                      model.close();
-                     mfruittext.setText("Test mode");
+                     /*mfruittext.setText("Test mode");
                     mft2.setText(df.format(outputFeature0.getFloatArray()[0]/255.0)+"   - apple\n"+
                             df.format(outputFeature0.getFloatArray()[1]/255.0)+"   - Rotten apple\n"+
                             df.format(outputFeature0.getFloatArray()[2]/255.0)+"  - Banana\n"+
@@ -111,56 +113,56 @@ public class GalleryFragment extends Fragment {
                             df.format(outputFeature0.getFloatArray()[5]/255.0)+"  - Rotten Orange\n"+
                             df.format(outputFeature0.getFloatArray()[6]/255.0)+"  - Tomato\n"+
                             df.format(outputFeature0.getFloatArray()[7]/255.0)+"  - Not ripen tomato\n"+
-                            df.format(outputFeature0.getFloatArray()[8]/255.0)+"  - strawberry\n");
-                   /*  if(outputFeature0.getFloatArray()[1]>50.0){
+                            df.format(outputFeature0.getFloatArray()[8]/255.0)+"  - strawberry\n");*/
+                    if(outputFeature0.getFloatArray()[0]>acc){
                          mfruittext.setText("Apple");
                          mft2.setText(R.string.s_apple);
                      }
 
-                     else if(outputFeature0.getFloatArray()[1]>50.0){
+                     else if(outputFeature0.getFloatArray()[1]>acc){
                          mfruittext.setText("rotten Apple");
                          mft2.setText(R.string.r_apple);
                      }
-                     else if(outputFeature0.getFloatArray()[2]>50.0){
+                     else if(outputFeature0.getFloatArray()[4]>acc){
                          mfruittext.setText("Orange");
                          mft2.setText(R.string.s_orange);
                      }
-                     else if(outputFeature0.getFloatArray()[3]>50.0){
+                     else if(outputFeature0.getFloatArray()[5]>acc){
                          mfruittext.setText("rotten Orange");
                          mft2.setText(R.string.r_orange);
                      }
 
 
-                     else if(outputFeature0.getFloatArray()[4]>50.0){
+                     else if(outputFeature0.getFloatArray()[2]>acc){
                          mfruittext.setText("Banana");
                          mft2.setText(R.string.s_banana);
                      }
-                     else if(outputFeature0.getFloatArray()[5]>50.0){
+                     else if(outputFeature0.getFloatArray()[3]>acc){
                          mfruittext.setText("rotten Banana");
                          mft2.setText(R.string.r_banana);
                      }
-                     else if(outputFeature0.getFloatArray()[6]>50.0){
+                     else if(outputFeature0.getFloatArray()[6]>acc){
                          mfruittext.setText("Tomato");
                          mft2.setText(R.string.s_tomato);
                      }
-                     else if(outputFeature0.getFloatArray()[7]>50.0){
+                     else if(outputFeature0.getFloatArray()[7]>acc){
                          mfruittext.setText("not ripned tomoato");
                          mft2.setText(R.string.n_tomato);
                      }
 
-                     else if(outputFeature0.getFloatArray()[8]>50.0){
+                     else if(outputFeature0.getFloatArray()[8]>acc){
                          mfruittext.setText("Strawberries");
                          mft2.setText(R.string.s_straw);
                      }
 
 
-                     else{
-                         mfruittext.setText("none");
-                     }*/
+                     else{mft2.setText("none please select a fruit");
+                         mfruittext.setText("NA");
+                     }
 
 
                  } catch (IOException e) {
-                     // TODO Handle the exception
+                     Toast.makeText(getActivity().getApplicationContext(), "Select image first",Toast.LENGTH_SHORT).show();
                  }
 
 

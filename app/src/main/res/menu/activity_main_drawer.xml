@@ -55,8 +55,6 @@
                 <item android:title="3. Take a photo of the fruit" />
                 <item android:title="4. Click predict to know the details"/>
 
-
-
     </group>
 
 </menu>

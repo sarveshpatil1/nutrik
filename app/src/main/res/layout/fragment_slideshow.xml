@@ -13,8 +13,8 @@
 
         <TextView
             android:id="@+id/text_slideshow"
-            android:layout_width="311dp"
-            android:layout_height="106dp"
+            android:layout_width="310dp"
+            android:layout_height="110dp"
             android:textAlignment="center"
             android:textSize="20sp"
             android:scrollbars="vertical"
